@@ -48,11 +48,18 @@
         </dependency>
         <!-- https://mvnrepository.com/artifact/com.github.xabgesagtx/telegram-spring-boot-starter -->
         <!-- https://mvnrepository.com/artifact/com.github.xabgesagtx/telegram-spring-boot-starter -->
+<!--        <dependency>-->
+<!--            <groupId>com.github.xabgesagtx</groupId>-->
+<!--            <artifactId>telegram-spring-boot-starter</artifactId>-->
+<!--            <version>0.26</version>-->
+<!--        </dependency>-->
+        <!-- https://mvnrepository.com/artifact/org.telegram/telegrambots-spring-boot-starter -->
         <dependency>
-            <groupId>com.github.xabgesagtx</groupId>
-            <artifactId>telegram-spring-boot-starter</artifactId>
-            <version>0.26</version>
+            <groupId>org.telegram</groupId>
+            <artifactId>telegrambots-spring-boot-starter</artifactId>
+            <version>5.4.0</version>
         </dependency>
+
 
         <dependency>
             <groupId>com.squareup.okhttp3</groupId>
