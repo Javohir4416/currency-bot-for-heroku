@@ -76,6 +76,7 @@ public class TelegramService {
         }
 
 
+
         else if (update.hasCallbackQuery()) {
             User userFromUpdate = userService.getUserFromUpdate(update);
             String data = update.getCallbackQuery().getData();
