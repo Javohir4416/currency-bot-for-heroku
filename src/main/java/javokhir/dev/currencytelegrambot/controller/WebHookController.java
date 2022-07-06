@@ -7,13 +7,13 @@ import org.telegram.telegrambots.meta.api.objects.Update;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("api/telegram")
+@RequestMapping("/api")
 public class WebHookController {
 
     private final TelegramService telegramService;
 
 
-    @PostMapping
+    @PostMapping("/telegram")
     public void getUpdates(@RequestBody Update update){
         telegramService.getUpdates(update);
     }
