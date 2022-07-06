@@ -48,7 +48,7 @@ public class TelegramService {
                         case "/start":
                             Optional<User> userOptional = userRepo.findById(userFromUpdate.getId());
                             if (userStateRepo.findByUserState(UserStateNames.START).equals(userFromUpdate.getState())) {
-                                userService.whenStart(userOptional.orElseThrow());
+                                userService.whenStart(userOptional.get());
                             }
                             break;
                         case "/admin":
